@@ -26,14 +26,14 @@
   <main id="main">
     <section class="hero wrap" aria-labelledby="hero-title">
       <img class="hero-icon" src="assets/icon.png" alt="DiskScope app icon: a magnifying glass over a colourful disk map" width="108" height="108" fetchpriority="high">
-      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> <span data-release-badge>Version 0.1.1</span></p>
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> <span data-release-badge>Version 0.1.2</span></p>
       <h1 id="hero-title">Your disk,<br class="mobile-break"> in perspective.</h1>
       <p class="hero-copy">Find the files taking up space. Follow them through your folders.<br class="desktop-break"> Make room with a clear view of what you’re moving to Trash.</p>
       <div class="hero-actions">
-        <!-- DOWNLOAD_PRIMARY --><a class="button primary" href="https://github.com/MES30004E/DiskScope/releases/download/v0.1.1/DiskScope-0.1.1-arm64.zip">Download DiskScope 0.1.1 <span aria-hidden="true">↓</span></a><!-- /DOWNLOAD_PRIMARY -->
+        <!-- DOWNLOAD_PRIMARY --><a class="button primary" href="https://github.com/MES30004E/DiskScope/releases/download/v0.1.2/DiskScope-0.1.2-arm64.dmg">Download DiskScope 0.1.2 <span aria-hidden="true">↓</span></a><!-- /DOWNLOAD_PRIMARY -->
         <a class="button secondary" href="#explore">Take a closer look <span aria-hidden="true">↘</span></a>
       </div>
-      <p id="release-note" class="release-note"><!-- RELEASE_NOTE -->Version 0.1.1 · Apple Silicon · macOS 14 or later<!-- /RELEASE_NOTE --></p>
+      <p id="release-note" class="release-note"><!-- RELEASE_NOTE -->Version 0.1.2 · Apple Silicon · macOS 14 or later<!-- /RELEASE_NOTE --></p>
     </section>
 
     <section class="showcase wrap" id="explore" aria-labelledby="explore-title">
@@ -112,17 +112,17 @@
     </section>
 
     <section class="download wrap" id="download" aria-labelledby="download-title">
-      <div class="download-heading"><img src="assets/icon.png" alt="" width="64" height="64" loading="lazy"><div><p class="section-label">DiskScope for Mac</p><h2 id="download-title"><!-- RELEASE_TITLE -->DiskScope 0.1.1<!-- /RELEASE_TITLE --></h2></div></div>
+      <div class="download-heading"><img src="assets/icon.png" alt="" width="64" height="64" loading="lazy"><div><p class="section-label">DiskScope for Mac</p><h2 id="download-title"><!-- RELEASE_TITLE -->DiskScope 0.1.2<!-- /RELEASE_TITLE --></h2></div></div>
       <div class="download-content">
         <div><p><!-- RELEASE_DESCRIPTION -->This release is free and unnotarized. macOS may ask you to approve DiskScope the first time you open it.<!-- /RELEASE_DESCRIPTION --></p><p class="requirements">Requires macOS 14 or later and an Apple Silicon Mac.</p></div>
-        <div class="download-action"><!-- DOWNLOAD_SECONDARY --><a class="button primary" href="https://github.com/MES30004E/DiskScope/releases/download/v0.1.1/DiskScope-0.1.1-arm64.zip">Download DiskScope 0.1.1 <span aria-hidden="true">↓</span></a><!-- /DOWNLOAD_SECONDARY --><p><!-- RELEASE_LINKS --><a href="https://github.com/MES30004E/DiskScope/releases/tag/v0.1.1">Release notes</a> <a href="https://github.com/MES30004E/DiskScope/releases">GitHub Releases</a> <a href="https://github.com/MES30004E/DiskScope/releases/download/v0.1.1/SHA256SUMS">SHA-256 checksum</a><!-- /RELEASE_LINKS --></p></div>
+        <div class="download-action"><!-- DOWNLOAD_SECONDARY --><a class="button primary" href="https://github.com/MES30004E/DiskScope/releases/download/v0.1.2/DiskScope-0.1.2-arm64.dmg">Download DiskScope 0.1.2 <span aria-hidden="true">↓</span></a><!-- /DOWNLOAD_SECONDARY --><p><!-- RELEASE_LINKS --><a href="https://github.com/MES30004E/DiskScope/releases/tag/v0.1.2">Release notes</a> <a href="https://github.com/MES30004E/DiskScope/releases">GitHub Releases</a> <a href="https://github.com/MES30004E/DiskScope/releases/download/v0.1.2/SHA256SUMS">SHA-256 checksum</a><!-- /RELEASE_LINKS --></p></div>
       </div>
       <details class="installation" id="installation">
         <summary>Installation and first launch <span aria-hidden="true">＋</span></summary>
         <ol>
-          <li>Download the ZIP from this page. To check it, type <code>shasum -a 256 </code> in Terminal, drag the ZIP into Terminal, and press Return. Compare the result with the published SHA-256 checksum.</li>
-          <li>Unzip the download in Finder, move DiskScope to Applications, then open that copy.</li>
-          <li>If macOS blocks the first launch of an unnotarized release, verify where you downloaded it and check the ZIP’s checksum. Open <strong>System Settings → Privacy &amp; Security</strong>, scroll to <strong>Security</strong>, and use <strong>Open Anyway</strong> for DiskScope. Confirm the prompt and authenticate if macOS asks.</li>
+          <li>Download DiskScope from this page. To check it, type <code>shasum -a 256 </code> in Terminal, drag the downloaded file into Terminal, and press Return. Compare the result with its entry in the published SHA-256 checksums.</li>
+          <li><!-- INSTALL_DOWNLOAD -->Open the downloaded DMG, then drag DiskScope onto the Applications shortcut. When copying finishes, eject the DiskScope disk image and open DiskScope from Applications.<!-- /INSTALL_DOWNLOAD --></li>
+          <li>If macOS blocks the first launch of an unnotarized release, verify where you downloaded it and check the download’s checksum. Open <strong>System Settings → Privacy &amp; Security</strong>, scroll to <strong>Security</strong>, and use <strong>Open Anyway</strong> for DiskScope. Confirm the prompt and authenticate if macOS asks.</li>
           <li>Choose a folder to scan. For broader access or help with a partial scan, see the <a href="permissions.html">macOS permissions guide</a>.</li>
         </ol>
         <p>Your approval applies to DiskScope. On a managed Mac, your administrator may control whether approval is available. <a href="https://support.apple.com/guide/mac-help/open-an-app-by-overriding-security-settings-mh40617/mac">Apple’s first-launch instructions</a>.</p>
@@ -132,7 +132,7 @@
         <ol>
           <li>Choose <strong>DiskScope → Check for Updates…</strong> in the menu bar. When an update is available, Sparkle shows its version and release notes.</li>
           <li>Use <strong>DiskScope → Settings → Updates</strong> to enable automatic checks and downloads. Sparkle verifies the signed feed and update archive before installing an update.</li>
-          <li>If macOS prevents Sparkle from installing an update, quit DiskScope, download and verify the new ZIP, then replace DiskScope in Applications. Follow the installation steps if macOS asks you to approve the new build.</li>
+          <li>If macOS prevents Sparkle from installing an update, quit DiskScope, download and verify the new installer, then replace DiskScope in Applications. Follow the installation steps if macOS asks you to approve the new build.</li>
         </ol>
       </details>
     </section>

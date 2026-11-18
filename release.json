@@ -1,17 +1,18 @@
 {
   "status": "released",
   "configuration": {
-    "version": "0.1.1",
-    "build": 2,
-    "previous_build": 1,
+    "version": "0.1.2",
+    "build": 3,
+    "previous_build": 2,
     "bundle_id": "app.diskscope.mac",
     "channel": "stable",
     "repository": "MES30004E/DiskScope",
     "feed_url": "https://mes30004e.github.io/DiskScope/appcast.xml",
     "signing_mode": "self-signed",
     "signing_certificate_sha1": "c4317bb959f86a5a7ab27911f12ddc684772ae2b",
-    "public_key": "hDbpacDJ6SzMbLJnslUiTZ2ni4/EC3zYbrxtlHXQhTM="
+    "public_key": "hDbpacDJ6SzMbLJnslUiTZ2ni4/EC3zYbrxtlHXQhTM=",
+    "installer_format": "dmg"
   },
-  "download_url": "https://github.com/MES30004E/DiskScope/releases/download/v0.1.1/DiskScope-0.1.1-arm64.zip",
-  "sha256": "0a36bef8f8b661c5ae192f689b03db462262923ba2cf2a32aa74a2fa401e7029"
+  "download_url": "https://github.com/MES30004E/DiskScope/releases/download/v0.1.2/DiskScope-0.1.2-arm64.dmg",
+  "sha256": "f6ef569a015708babe58449a4a4250e093bef07973a18d3a1b91a14140b4edcf"
 }
