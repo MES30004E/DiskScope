@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="About DiskScope, local storage privacy, and third-party acknowledgements.">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>About &amp; acknowledgements — DiskScope</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="36" height="36"><span>DiskScope</span></a>
+    <nav aria-label="Main navigation"><a href="index.html#explore">Explore</a><a href="permissions.html">Permissions</a><a href="index.html#download">Release status</a></nav>
+  </header>
+  <main id="main" class="prose wrap">
+    <a class="back-link" href="index.html">← Back to DiskScope</a>
+    <h1>About DiskScope.</h1>
+    <p>DiskScope is an independent native macOS storage explorer. It builds on the idea of seeing disk usage as a map, familiar from Disk Inventory X, with a native file hierarchy, rectangular and circular views, and a Collector for preparing a cleanup.</p>
+    <h2>Privacy and access</h2>
+    <p>DiskScope scans locally. File names, paths, sizes and saved inventories stay on the Mac. Storage analysis requires no account or cloud service. Saved scans live in the user’s private Application Support folder and are marked as potentially stale because files can change after a scan.</p>
+    <p>You choose folders and grant additional access through macOS. For more information, see the <a href="permissions.html">macOS permissions guide</a>.</p>
+    <p>The update channel makes HTTPS requests to retrieve release information and downloads. Those requests omit your file inventory. This website uses no analytics, external fonts, advertising or third-party scripts. GitHub receives ordinary website and download requests when you use its services.</p>
+    <h2>Distribution</h2>
+    <p><!-- ABOUT_RELEASE -->The application source code is private. The release page shows when a packaged build is available.<!-- /ABOUT_RELEASE --></p>
+    <h2>Third-party acknowledgements</h2>
+    <p>DiskScope integrates the Sparkle update framework. Sparkle is distributed under its BSD license and includes additional third-party notices. <a href="assets/Sparkle-LICENSE.txt">Read Sparkle’s full license and bundled acknowledgements</a>.</p>
+    <p>DiskScope acknowledges Disk Inventory X as inspiration for visual storage exploration.</p>
+    <hr>
+    <p><a href="index.html#download">See the current release status</a>.</p>
+  </main>
+  <footer class="site-footer wrap">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="28" height="28"><span>DiskScope</span></a>
+  </footer>
+</body>
+</html>

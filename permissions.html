@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Choose what DiskScope can scan and troubleshoot macOS privacy permissions, saved locations and partial scans.">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>macOS permissions — DiskScope</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="36" height="36"><span>DiskScope</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html#explore">Explore</a>
+      <a href="permissions.html" aria-current="page">Permissions</a>
+      <a class="nav-release" href="index.html#download">Release status</a>
+    </nav>
+  </header>
+  <main id="main" class="prose wrap">
+    <a class="back-link" href="index.html">← Back to DiskScope</a>
+    <h1>macOS permissions</h1>
+    <p>Start with the folder or volume you want to scan. DiskScope reads filesystem metadata for storage analysis. macOS controls which locations the app can access and may ask you for consent. Open <strong>DiskScope → Settings → Privacy &amp; Access</strong> to review your options.</p>
+
+    <h2>Saved folders and individual volumes</h2>
+    <p>Use <strong>Scan Folder…</strong> to select a specific location. DiskScope keeps saved locations for later use. If it needs a new selection, use <strong>Re-authorise…</strong> on the saved location and select it again. If a drive or network share is unavailable, reconnect or mount it before retrying. Scan each mounted volume you want to measure.</p>
+    <p>macOS can ask separately for access to locations such as Desktop, Documents, Downloads, removable drives and network volumes. Review DiskScope’s entries under <strong>System Settings → Privacy &amp; Security → Files &amp; Folders</strong>. <a href="https://support.apple.com/guide/security/controlling-app-access-to-files-secddd1d86a6/web">Apple’s guide to file access</a>.</p>
+
+    <h2>Full Disk Access for broader scans</h2>
+    <p>Full Disk Access is optional. It covers broad filesystem privacy protections, including data from Mail, Messages and Safari and some Time Machine data. Select <strong>Open Full Disk Access Settings</strong> from DiskScope’s Privacy &amp; Access settings. In macOS, add DiskScope from Applications if needed and turn the switch on. Quit and reopen DiskScope if prompted, then rescan.</p>
+    <p>If you have multiple copies or replaced the app, check that the copy you run is the one enabled in System Settings. DiskScope reports what it could scan. The Full Disk Access switch in System Settings shows the grant itself. <a href="https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/mac">Apple’s Privacy &amp; Security settings guide</a>.</p>
+
+    <h2>Photos, Music and other apps’ data</h2>
+    <p>Photos library access and Media &amp; Apple Music have their own controls in <strong>Privacy &amp; Security</strong>. A regular folder of image or music files follows filesystem access rules. DiskScope’s storage scan does not require granting PhotoKit access. If macOS shows a Photos or other-app data request during a scan, you can decline and review the partial result. <a href="https://support.apple.com/guide/mac-help/change-privacy-security-settings-on-mac-mchl211c911f/mac">Apple’s privacy categories</a>.</p>
+    <p>macOS can separately protect app data containers and app group containers, even inside a folder you selected. Application Support may contain its own restricted app data. <a href="https://developer.apple.com/documentation/xcode/protecting-local-app-data-using-containers">Apple’s overview of app container protection</a>.</p>
+
+    <h2>File permissions, backups and iCloud Drive</h2>
+    <p>File ownership, POSIX mode bits, access control lists and System Integrity Protection still apply. They can restrict access to other users’ folders, backup volumes or protected system data. For an item you own, inspect <strong>Sharing &amp; Permissions</strong> in Finder’s <strong>Get Info</strong>. <a href="https://developer.apple.com/documentation/security/accessing-files-from-the-macos-app-sandbox">Apple’s overview of filesystem access restrictions</a>.</p>
+    <p>iCloud Drive can require macOS file access consent. Cloud-only items may also report little or no local disk usage until downloaded. For a file you need to make available locally, use <strong>Download Now</strong> in Finder. <a href="https://support.apple.com/guide/mac-help/work-with-folders-and-files-in-icloud-drive-mchl1a02d711/mac">Apple’s iCloud Drive guide</a>.</p>
+
+    <h2>Partial scans</h2>
+    <p>DiskScope scans items it can access. Use <strong>Scan Issues</strong> to see which paths could not be read and why. The totals can be incomplete when a location is denied, disconnected or skipped. Rescan after fixing access to a location you want measured.</p>
+    <hr>
+    <p><a href="index.html#installation">Installation and first launch</a></p>
+  </main>
+  <footer class="site-footer wrap">
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="28" height="28"><span>DiskScope</span></a>
+    <div class="footer-links"><a href="about.html">About &amp; acknowledgements</a></div>
+  </footer>
+</body>
+</html>

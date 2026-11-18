@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DiskScope is a native Mac storage explorer with treemap and circular views, saved scans, and a Collector for reviewing files before moving them to Trash.">
+  <meta name="theme-color" content="#0d1117">
+  <meta name="color-scheme" content="dark">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>DiskScope — Your disk, in perspective.</title>
+  <link rel="icon" type="image/png" href="assets/icon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="DiskScope home"><img src="assets/icon.png" alt="" width="36" height="36"><span>DiskScope</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#explore">Explore</a>
+      <a href="#privacy">Privacy</a>
+      <a class="nav-release" href="#download">Release status <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <img class="hero-icon" src="assets/icon.png" alt="DiskScope app icon: a magnifying glass over a colourful disk map" width="108" height="108" fetchpriority="high">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> <span data-release-badge>Development preview</span></p>
+      <h1 id="hero-title">Your disk,<br class="mobile-break"> in perspective.</h1>
+      <p class="hero-copy">Find the files taking up space. Follow them through your folders.<br class="desktop-break"> Make room with a clear view of what you’re moving to Trash.</p>
+      <div class="hero-actions">
+        <!-- DOWNLOAD_PRIMARY --><button class="button primary" type="button" disabled aria-describedby="release-note">Download coming soon <span aria-hidden="true">↓</span></button><!-- /DOWNLOAD_PRIMARY -->
+        <a class="button secondary" href="#explore">Take a closer look <span aria-hidden="true">↘</span></a>
+      </div>
+      <p id="release-note" class="release-note"><!-- RELEASE_NOTE -->Built for Apple Silicon · macOS 14 or later<br> No public release available yet.<!-- /RELEASE_NOTE --></p>
+    </section>
+
+    <section class="showcase wrap" id="explore" aria-labelledby="explore-title">
+      <div class="showcase-heading">
+        <div><p class="section-label">One scan. More perspective.</p><h2 id="explore-title">Find your way through the space.</h2></div>
+        <p>Three ways to explore and prepare a cleanup,<br class="desktop-break"> connected to the same file hierarchy.</p>
+      </div>
+      <div class="view-tabs" role="tablist" aria-label="App screenshots">
+        <button id="tab-treemap" role="tab" aria-selected="true" aria-controls="panel-treemap" tabindex="0"><span aria-hidden="true">▦</span> Treemap</button>
+        <button id="tab-sunburst" role="tab" aria-selected="false" aria-controls="panel-sunburst" tabindex="-1"><span aria-hidden="true">◉</span> Sunburst</button>
+        <button id="tab-collector" role="tab" aria-selected="false" aria-controls="panel-collector" tabindex="-1"><span aria-hidden="true">＋</span> Collector</button>
+      </div>
+      <div class="capture-shell">
+        <figure id="panel-treemap" class="capture" role="tabpanel" aria-labelledby="tab-treemap" tabindex="0">
+          <a class="capture-link" href="assets/treemap.png" aria-label="Open full-size screenshot of the treemap"><img src="assets/treemap.png" alt="DiskScope’s rectangular treemap beside the native folder hierarchy, showing a controlled demonstration folder." width="2940" height="1684" fetchpriority="high"></a>
+          <figcaption><span>01 / Rectangular treemap</span> Every block points to a real item in your folder hierarchy. <a href="assets/treemap.png">View full size <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+        <figure id="panel-sunburst" class="capture" role="tabpanel" aria-labelledby="tab-sunburst" tabindex="0" hidden>
+          <a class="capture-link" href="assets/sunburst.png" aria-label="Open full-size screenshot of the circular sunburst"><img src="assets/sunburst.png" alt="DiskScope’s circular sunburst displays nested folders as rings, alongside the same native file hierarchy." width="2940" height="1684" loading="lazy"></a>
+          <figcaption><span>02 / Circular sunburst</span> Follow nested folders from the centre out. <a href="assets/sunburst.png">View full size <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+        <figure id="panel-collector" class="capture" role="tabpanel" aria-labelledby="tab-collector" tabindex="0" hidden>
+          <a class="capture-link" href="assets/collector.png" aria-label="Open full-size screenshot of the Collector"><img src="assets/collector.png" alt="DiskScope’s Collector stages demonstration files for review before the user confirms moving them to Trash." width="1520" height="1080" loading="lazy"></a>
+          <figcaption><span>03 / Collector</span> Gather candidates, review the list, then decide. <a href="assets/collector.png">View full size <span aria-hidden="true">↗</span></a></figcaption>
+        </figure>
+      </div>
+      <p class="capture-note">Screenshots from a DiskScope development build using demonstration files.</p>
+      <noscript><p class="capture-note">JavaScript is off. View the <a href="assets/sunburst.png">sunburst</a> and <a href="assets/collector.png">Collector</a> screenshots directly.</p></noscript>
+    </section>
+
+    <section class="features wrap" aria-labelledby="features-title">
+      <div class="section-intro"><p class="section-label">Made for finding, then deciding.</p><h2 id="features-title">Find the files behind the map.</h2><p>Move naturally between the big picture and the files behind it.</p></div>
+      <div class="feature-rows">
+        <article class="feature-row">
+          <span class="feature-number" aria-hidden="true">01</span>
+          <div><h3>Explore in two dimensions.<br> Or around the circle.</h3></div>
+          <p>Switch between the familiar rectangular treemap and a circular sunburst. Both follow the same folders, size metric and selection. Changing the view doesn’t start another scan.</p>
+        </article>
+        <article class="feature-row">
+          <span class="feature-number" aria-hidden="true">02</span>
+          <div><h3>Keep the path<br> in sight.</h3></div>
+          <p>The native folder hierarchy, breadcrumbs and Scan Root control keep you oriented. Find an item in the map, inspect it, reveal it in Finder or take a Quick Look.</p>
+        </article>
+        <article class="feature-row">
+          <span class="feature-number" aria-hidden="true">03</span>
+          <div><h3>Pick up where<br> your scan left off.</h3></div>
+          <p>Saved scans restore locally, without walking the whole drive again. Cached results are marked as potentially stale, with an explicit Refresh when you want a new picture.</p>
+        </article>
+        <article class="feature-row">
+          <span class="feature-number" aria-hidden="true">04</span>
+          <div><h3>Review first.<br> Make room second.</h3></div>
+          <p>Add candidates to the Collector without moving the files. Review the list and confirm before the native Trash operation. Successful changes update the current scan; failed items remain available to review.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="native-band wrap" aria-labelledby="native-title">
+      <div><p class="section-label">At home on your Mac.</p><h2 id="native-title">Native, down to the details.</h2><p>Built with Swift, AppKit and SwiftUI for Apple Silicon. A fast metadata scanner does the heavy work, while familiar Mac controls keep exploration straightforward.</p></div>
+      <dl class="native-details">
+        <div><dt>Platform</dt><dd>macOS 14+</dd></div>
+        <div><dt>Architecture</dt><dd>Apple Silicon</dd></div>
+        <div><dt>Size metrics</dt><dd>Logical &amp; on disk</dd></div>
+        <div><dt>File actions</dt><dd>Finder · Quick Look · Trash</dd></div>
+      </dl>
+    </section>
+
+    <section class="privacy wrap" id="privacy" aria-labelledby="privacy-title">
+      <div class="privacy-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 5 8 11v12c0 10 9 17 16 20 7-3 16-10 16-20V11L24 5Z" stroke="currentColor" stroke-width="1.5"/><path d="m17 24 5 5 10-11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <p class="section-label">Your files stay yours.</p>
+      <h2 id="privacy-title">A closer look.<br> Entirely on your Mac.</h2>
+      <p class="privacy-copy">Storage analysis happens on your device. Your file inventory isn’t uploaded. There’s no account, analytics or cloud service required to explore your storage.</p>
+      <div class="privacy-details">
+        <div><h3>You choose the access.</h3><p>Choose the folders you want to scan. For broader scans, you can grant optional Full Disk Access. <a href="permissions.html">Read the macOS permissions guide</a>.</p></div>
+        <div><h3>You choose the update.</h3><p>Public releases use Sparkle to check for and verify signed updates over HTTPS. <a href="#updates">Check for updates and manage your preferences</a>.</p></div>
+      </div>
+    </section>
+
+    <section class="download wrap" id="download" aria-labelledby="download-title">
+      <div class="download-heading"><img src="assets/icon.png" alt="" width="64" height="64" loading="lazy"><div><p class="section-label">DiskScope for Mac</p><h2 id="download-title"><!-- RELEASE_TITLE -->A clearer view is taking shape.<!-- /RELEASE_TITLE --></h2></div></div>
+      <div class="download-content">
+        <div><p><!-- RELEASE_DESCRIPTION -->The download will appear here once a verified public release is available.<!-- /RELEASE_DESCRIPTION --></p><p class="requirements">Requires macOS 14 or later and an Apple Silicon Mac.</p></div>
+        <div class="download-action"><!-- DOWNLOAD_SECONDARY --><button class="button primary" type="button" disabled>Public release not available <span aria-hidden="true">↓</span></button><!-- /DOWNLOAD_SECONDARY --><p><!-- RELEASE_LINKS --><!-- /RELEASE_LINKS --></p></div>
+      </div>
+      <details class="installation" id="installation">
+        <summary>Installation and first launch <span aria-hidden="true">＋</span></summary>
+        <ol>
+          <li>Download the ZIP from this page. To check it, type <code>shasum -a 256 </code> in Terminal, drag the ZIP into Terminal, and press Return. Compare the result with the published SHA-256 checksum.</li>
+          <li>Unzip the download in Finder, move DiskScope to Applications, then open that copy.</li>
+          <li>If macOS blocks the first launch of an unnotarized release, verify where you downloaded it and check the ZIP’s checksum. Open <strong>System Settings → Privacy &amp; Security</strong>, scroll to <strong>Security</strong>, and use <strong>Open Anyway</strong> for DiskScope. Confirm the prompt and authenticate if macOS asks.</li>
+          <li>Choose a folder to scan. For broader access or help with a partial scan, see the <a href="permissions.html">macOS permissions guide</a>.</li>
+        </ol>
+        <p>Your approval applies to DiskScope. On a managed Mac, your administrator may control whether approval is available. <a href="https://support.apple.com/guide/mac-help/open-an-app-by-overriding-security-settings-mh40617/mac">Apple’s first-launch instructions</a>.</p>
+      </details>
+      <details class="installation" id="updates">
+        <summary>Check for updates <span aria-hidden="true">＋</span></summary>
+        <ol>
+          <li>Choose <strong>DiskScope → Check for Updates…</strong> in the menu bar. When an update is available, Sparkle shows its version and release notes.</li>
+          <li>Use <strong>DiskScope → Settings → Updates</strong> to enable automatic checks and downloads. Sparkle verifies the signed feed and update archive before installing an update.</li>
+          <li>If macOS prevents Sparkle from installing an update, quit DiskScope, download and verify the new ZIP, then replace DiskScope in Applications. Follow the installation steps if macOS asks you to approve the new build.</li>
+        </ol>
+      </details>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap">
+    <div><a class="brand" href="#"><img src="assets/icon.png" alt="" width="28" height="28" loading="lazy"><span>DiskScope</span></a><p>A native view of your storage.</p></div>
+    <div class="footer-links"><a href="permissions.html">Permissions</a><a href="about.html">About &amp; acknowledgements</a><!-- DISTRIBUTION_LINK --><!-- /DISTRIBUTION_LINK --></div>
+    <p class="footer-note">DiskScope is an independent project inspired by the storage exploration of Disk Inventory X.</p>
+  </footer>
+</body>
+</html>
