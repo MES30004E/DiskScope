@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?><!-- sparkle-sign-warning:
+IMPORTANT: This file was signed by Sparkle. Any modifications to this file requires re-signing this file with generate_appcast or sign_update! The signed signature will be embedded at the end of this file.
+--><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>DiskScope</title>
+        <item>
+            <title>0.1.0</title>
+            <pubDate>Thu, 19 Nov 2026 04:19:57 +0800</pubDate>
+            <sparkle:version>1</sparkle:version>
+            <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <description sparkle:format="markdown"><![CDATA[# DiskScope 0.1.0
+
+Initial public release for Apple Silicon Macs running macOS 14 or later.
+
+- Explore storage with the folder hierarchy, rectangular treemap and circular sunburst.
+- Reopen cached scans, refresh a selected subtree, and review cleanup candidates in the Collector.
+- Find permission guidance, saved-location recovery, scan issues and app identity in Settings → Privacy & Access.
+- Reuse saved parent-folder access for child locations and keep unavailable locations recoverable without repeated access-help alerts.
+- Check for signed updates through Sparkle in DiskScope → Check for Updates.
+
+This free release is self-signed and unnotarized. Follow the installation guide if macOS requires first-launch approval. Full Disk Access is optional; macOS controls consent and some protected locations can remain unavailable. Moving from an older ad-hoc build to this signing identity may require authorisation again.
+
+[Installation guide](https://mes30004e.github.io/DiskScope/#installation) · [Permissions guide](https://mes30004e.github.io/DiskScope/permissions.html)
+]]></description>
+            <enclosure url="https://github.com/MES30004E/DiskScope/releases/download/v0.1.0/DiskScope-0.1.0-arm64.zip" length="3836152" type="application/octet-stream" sparkle:edSignature="q9ez6Gg+VjhRB+TUx5GfnJDK9Nocrw0cO9VDs/oYBdklmwO09RnrGJQKDmLkMMxF+9xsv0UwHj7zx/tUcYgNDg=="></enclosure>
+        </item>
+    </channel>
+</rss><!-- sparkle-signatures:
+edSignature: XEg9yvQoN4AnByTBYKoTUVJ0Z5QN4dOYmpepDQGqR4Nlppk4uiUqJXOoCufMqe6ZX/czYZqYKf8n+QTs5X7vAA==
+length: 2292
+-->
