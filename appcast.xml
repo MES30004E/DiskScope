@@ -4,28 +4,25 @@ IMPORTANT: This file was signed by Sparkle. Any modifications to this file requi
     <channel>
         <title>DiskScope</title>
         <item>
-            <title>0.1.2</title>
-            <pubDate>Thu, 19 Nov 2026 07:32:33 +0800</pubDate>
-            <sparkle:version>3</sparkle:version>
-            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+            <title>0.1.3</title>
+            <pubDate>Thu, 19 Nov 2026 07:58:57 +0800</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.1.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <description sparkle:format="markdown"><![CDATA[## Easier installation and cache management
+            <description sparkle:format="markdown"><![CDATA[**Control how much space cached scans use**
 
-- Install with a DMG: open the disk image and drag DiskScope onto Applications, then eject the image and launch the installed app.
-- Select multiple cached scans in Settings and remove them together.
-- Choose how many cached scans to keep. The default is 20; oldest snapshots are removed first, with the existing cache size limit still applying.
-- See each cached scan’s completion date and time.
-- Remove an old cached snapshot while that location is scanning. The scan continues and can save a fresh snapshot when it finishes.
+- Settings → Cached Scans now shows current cache storage usage.
+- Set a maximum cache size from 64 to 16,384 MiB. The default remains 1,024 MiB (1 GiB).
+- Both scan-count and size limits apply. Lowering a limit removes cached metadata immediately; your scanned files and open results stay intact.
+- Scans larger than the chosen budget remain open but are not cached. Size limits persist across launches and apply to new scans.
 
-Removing cached snapshots never removes the scanned files or saved locations. Automatic updates continue through DiskScope’s signed update feed.
-
-Apple Silicon · macOS 14 or later. This free release is self-signed and unnotarized; macOS may require first-launch approval in Privacy & Security. Full Disk Access and other privacy grants remain under your control.
+Apple Silicon · macOS 14 or later. This free release is self-signed and unnotarized; first-launch approval remains under your control. Existing automatic updates use the signed feed.
 ]]></description>
-            <enclosure url="https://github.com/MES30004E/DiskScope/releases/download/v0.1.2/DiskScope-0.1.2-arm64.zip" length="3922451" type="application/octet-stream" sparkle:edSignature="/dyl0out3KK438G9eCd2XaBn9l1uTLiHxPLzlc4OcY9N16vb7rffsiV7ctgeYTCAsmd9sTER8LixruYVu5LVAw=="></enclosure>
+            <enclosure url="https://github.com/MES30004E/DiskScope/releases/download/v0.1.3/DiskScope-0.1.3-arm64.zip" length="3930408" type="application/octet-stream" sparkle:edSignature="wlrmCtl3XNSYGSvIDG6aadE8THqo7gvyJVcwxJlWrLRlSjWlvTKq6OuwJvkeqS2zRY6RKTisHhDXc0yRLn2IDA=="></enclosure>
         </item>
     </channel>
 </rss><!-- sparkle-signatures:
-edSignature: mOl/nskmDndUvl9vaudm4d5LmMYXTE4JLVgXC+UMu7LtGuVyK5fTU5bwVoDbITYDgYSrqEb908u1O1nbIUHGBA==
-length: 2151
+edSignature: 41noWEMjEFum9ITSkIJSutWAVgMoHFYshRkv/TlKhAzVFgUowsbUC9UiYKj2wiOmBOP00E/QPde/14nD28YWBQ==
+length: 1868
 -->
